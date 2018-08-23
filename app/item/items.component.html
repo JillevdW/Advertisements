@@ -24,10 +24,32 @@ core theme, such as p-20, btn, h2, and list-group. You can view a full list of t
 class names available for styling your app at https://docs.nativescript.org/ui/theme.
 -->
 <StackLayout class="page">
+
+    <ScrollView>
+
+        <StackLayout orientation="vertical">
+    
+            <StackLayout id="banner" height="200" width="100%" backgroundColor="red" marginBottom="10"></StackLayout>
+    
+            <StackLayout id="2" height="200" width="100%" backgroundColor="blue" marginBottom="10"></StackLayout>
+    
+            <StackLayout id="3" height="200" width="100%" backgroundColor="green" marginBottom="10"></StackLayout>
+    
+            <StackLayout id="4" height="200" width="100%" backgroundColor="yellow" marginBottom="10"></StackLayout>
+    
+        </StackLayout>
+    
+    </ScrollView>
+    <!-- <StackLayout id="bannerblock" height="100" width="100%"></StackLayout>
+    <GridLayout columns="*, *" rows="auto, auto, auto, auto" horizontalAlignment="center">
+        <Button row="0" col="0" text="smart banner" (tap)="createSmartBanner()"></Button>
+        <Button row="0" col="1" text="regular banner" (tap)="createRegularBanner()"></Button>
+    </GridLayout>
+            
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
                 class="list-group-item"></Label>
         </ng-template>
-    </ListView>
+    </ListView> -->
 </StackLayout>
